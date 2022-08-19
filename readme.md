@@ -17,6 +17,6 @@ I'm currently learning Full Stack Javascript Web Development course by Hitesh Ch
 
 # Project Monstera
 
-![Project06](./project06.png)
+![Project06](./photos/project06.png)
 
 ![badge](https://img.shields.io/badge/HTML-CSS-green)
