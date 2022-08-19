@@ -11,9 +11,9 @@ I'm currently learning Full Stack Javascript Web Development course by Hitesh Ch
 - more about tags and elements
 - css selectors
 
-# Time taken to complete this project
+# Time taken to complete this projec
 
-- Total 5 hours
+- Total 4.5 hours
 
 # Project Monstera
 
