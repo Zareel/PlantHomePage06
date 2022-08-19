@@ -1,18 +1,22 @@
 # I'm Zareel
 
 I'm currently learning Full Stack Javascript Web Development course by Hitesh Choudhary
-![LCO]
+
+![LOC-Mascot](https://learncodeonline.in/mascot.png)![badge](https://img.shields.io/badge/LearnCodeOnline-iNeuron-green)
 
 ---
 
-# What I have learned?
+# What I have learned by doing this project?
 
 - more about tags and elements
-- id's and classes
 - css selectors
 
 # Time taken to complete this project
 
 - Total 5 hours
 
-# Project06
+# Project Monstera
+
+![Project06](./project06.png)
+
+![badge](https://img.shields.io/badge/HTML-CSS-green)
