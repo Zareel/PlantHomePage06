@@ -1,13 +1,10 @@
+# Plant Home Page
+
 ## I'm Zareel
 
 Currently attending Full Stack Javascript Web Development Bootcamp by Hitesh Choudhary
 
-
-# Time taken to complete this projec
-
-- Total 12 hours
-
-# Project Monstera
+Plant Home Page website created using HTML AND CSS
 
 ![Project06](./photos/project06.png)
 
