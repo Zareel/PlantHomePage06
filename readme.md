@@ -13,7 +13,7 @@ I'm currently learning Full Stack Javascript Web Development course by Hitesh Ch
 
 # Time taken to complete this projec
 
-- Total 4.5 hours
+- Total 12 hours
 
 # Project Monstera
 
