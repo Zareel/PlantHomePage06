@@ -9,10 +9,10 @@
 * Desktop view with sidebar navigation and decorative plant image
 * Mobile view with centered content and responsive layout
 
-![ss](./screenshots/laptop_plus.png)
-![ss1](./screenshots/mobile_plant.png)
-![ss2](./screenshots/tab_plant.png)
-![ss3](./screenshots/ipad_plant.png)
+![ss](./screenshots/laptop.png)
+![ss1](./screenshots/mobile.png)
+![ss2](./screenshots/tab.png)
+![ss3](./screenshots/ipad.png)
 
 ---
 
