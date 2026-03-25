@@ -1,124 +1,190 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- fontAwesome -->
     <link
-      href="https://fonts.googleapis.com/css?family=Allerta"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link
-      href="https://fonts.googleapis.com/css?family=Abel"
-      rel="stylesheet"
-    />
-    <style>
-      /* Write styles here */
-    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Plant</title>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              mont: ["Montserrat", "sans-serif"],
+              roboto: ["Roboto", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
   </head>
   <body>
-    <nav id="navbarMonstera">
-      <div id="navFirst">
-        <img src="./photos/Logo.svg" />
+    <main class="h-screen overflow-hidden">
+      <img
+        src="./photos/6_folwer_cut.png"
+        alt="img"
+        class="hidden lg:flex absolute right-0 bottom-0 w-[400px] lg:w-[450px] xl:[500px] mx-auto"
+      />
+      <div class="w-full flex justify-center">
+        <img
+          src="./photos/6_folwer.png"
+          alt="img"
+          class="absolute bottom-0 w-[400px] md:w-[500px] lg:hidden"
+        />
       </div>
-
-      <div id="navMid">
+      <!-- navbar -->
+      <nav class="h-20 flex justify-between items-center px-10 lg:px-16 xl:px-24">
         <div>
-          <h4>Home</h4>
+          <img src="./photos/Logo.svg" alt="logo" class="w-[100px]" />
         </div>
-        <div><h4>Collection</h4></div>
-        <div>
-          <h4>Shop</h4>
+        <div class="hidden lg:flex">
+          <ul class="flex gap-12 font-roboto text-lg font-semibold">
+            <li>Home</li>
+            <li>Collection</li>
+            <li>Shop</li>
+            <li>About</li>
+            <li>Contact</li>
+          </ul>
         </div>
-        <div>
-          <h4>About</h4>
+        <!-- icons -->
+        <div class="flex gap-6">
+          <div class="lg:hidden">
+            <!-- menu -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+          </div>
+          <!-- icons -->
+          <div class="hidden md:flex gap-6 ">
+            <!-- icon 1 -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
+              />
+            </svg>
+            <!-- icon2 -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
+              />
+            </svg>
+            <!-- icon3 -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+              />
+            </svg>
+          </div>
         </div>
-        <div>
-          <h4>Contact</h4>
+      </nav>
+      <!-- section -->
+       <!-- dotes -->
+        <div class="absolute flex gap-10 left-12 top-64 flex-col">
+            <div class="h-2 w-2 bg-black rounded-full"></div>
+            <div class="h-2 w-2 bg-black rounded-full"></div>
+            <div class="h-2 w-2 bg-black rounded-full -mt-6"></div>
+            <div class="h-2 w-2 bg-black rounded-full"></div>
+         
+            
         </div>
-      </div>
-
-      <div id="navEnd">
-        <div>
-          <img src="/photos/cart.svg" />
-        </div>
-        <div>
-          <img src="./photos/user.svg" />
-        </div>
-        <div>
-          <img src="./photos/search.svg" />
-        </div>
-      </div>
-    </nav>
-
-    <div id="midWhole">
-      <div id="midWholePart1">
-        <div id="midWholePart11">
+      <section
+        class="lg:pl-16 xl:pl-24 h-[350px] md:h-[220px] lg:h-[480px]  xl:h-[500px] flex flex-col justify-center items-center lg:items-start gap-6 lg:gap-4"
+      >
+        <h1 class="text-5xl md:text-7xl xl:text-8xl font-bold text-center lg:text-start">MONSTERA</h1>
+        <p class="font-roboto w-auto md:w-[500px] text-center lg:text-start text-sm lg:text-[16px] xl:text-lg">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis elit
+          distinctio quia sint vel maxime eveniet consectetur! Consequatur
+          similique nostrum tenetur accusamus.
+        </p>
+        <button
+          class="bg-[#40632A] px-6 xl:px-8 py-2 text-white tracking-wider font-awesome text-xl xl:text-2xl rounded-full"
+        >
+          DISCOVER <i class="fa-solid fa-angle-right"></i>
+        </button>
+      </section>
+      <!-- section -->
+      <section class="hidden lg:flex justify-between w-2/3 lg:px-16 xl:px-24 mt-10">
+        <div class="flex gap-2">
+          <img src="./photos/springler.png" alt="" class="w-16" />
           <div>
-            <ul>
-              <li><h1 id="monstera">MONSTERA</h1></li>
-              <li style="margin-top:-20px;"></li>
-              <li>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              </li>
-              <li>
-                Quibusdam perferendis, dolore est odit iste cum quas quidem
-                officiis laudantium hic maxime recusandae?
-              </li>
-            </ul>
+            <h2 class="font-semibold">Feeding</h2>
+            <p class="text-xs font-roboto w-[150px]">
+              Lorem ipsum dolor sit amet. Sit aliquam!
+            </p>
           </div>
         </div>
-        <div id="midWholePart12">
-          <div id="midWholePart121">
-            <div>
-              <h1>DISCOVER</h1>
-            </div>
-            <div id="midWholePart122">
-              <img src="./photos/greaterThan.svg" />
-            </div>
+        <div class="flex gap-2">
+          <i class="fa-regular fa-lightbulb text-4xl"></i>
+          <div>
+            <h2 class="font-semibold">Light</h2>
+            <p class="text-xs font-roboto w-[150px]">
+              Lorem ipsum dolor sit amet. Sit aliquam!
+            </p>
           </div>
         </div>
-        <div id="midWholePart13">
-          <div class="midWholePart13Parts">
-            <div>
-              <img id="feeding" src="./photos/water plant.png" />
-            </div>
-            <div>
-              <h4>Feeding</h4>
-              <p class="text">
-                Lorem ipsum dolor sit amet consecteturadipisicing elit
-              </p>
-            </div>
-          </div>
-          <div class="midWholePart13Parts">
-            <div>
-              <img id="light" src="./photos/light.svg" alt="" />
-            </div>
-            <div>
-              <h4>Light</h4>
-              <p class="text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit
-              </p>
-            </div>
-          </div>
-          <div class="midWholePart13Parts">
-            <div>
-              <img id="care" src="./photos/plough.svg" />
-            </div>
-            <div>
-              <h4>Care</h4>
-              <p class="text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit
-              </p>
-            </div>
+        <div class="flex gap-2">
+          <img src="./photos/plough.svg" alt="" class="w-10" />
+          <div>
+            <h2 class="font-semibold">Care</h2>
+            <p class="text-xs font-roboto w-[150px]">
+              Lorem ipsum dolor sit amet. Sit aliquam!
+            </p>
           </div>
         </div>
-      </div>
-      <div>
-        <img id="imgMain" src="./photos/6_folwer_cut.png" />
-      </div>
-    </div>
+      </section>
+    </main>
   </body>
 </html>
